@@ -184,7 +184,7 @@ class DistributedBanquetTable(DistributedObject.DistributedObject, FSM.FSM, Banq
             newDiner = self.createDiner(i)
             self.diners[i] = newDiner
             self.dinerStatus[i] = self.HUNGRY
-
+            
     def createDiner(self, i):
         diner = Suit.Suit()
         diner.dna = SuitDNA.SuitDNA()
